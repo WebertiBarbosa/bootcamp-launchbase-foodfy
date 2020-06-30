@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 *{
-    margin: 0;
-    
+    margin: 0 ;
     padding: 0;
     border: 0;
     list-style: none;
-    font-family: 'Roboto', sans-serif;
+ 
+}
+
+body {
     max-width: 940px;
-    
-    
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;    
 }
 
 a {
@@ -19,15 +21,16 @@ a {
 .header {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     align-items: center;
-    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 19px;
-    /* margin-bottom: 10px; */
+    
 }
 
 .header img {
+    margin-left: 0;
     margin-right: 90px;
 }
 
@@ -42,12 +45,13 @@ a {
 
 .menu li a {
     display: block;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .principal {
     width: 940px;
     height: 366px;
+    /* margin-left: 230px; */
     background-color: #FBDFDB;
     border-radius: 30px;
     border-radius: 30px;
@@ -84,4 +88,152 @@ a {
     height: 300px;
     align-self: flex-end;
     margin-right: 100px;
+}
+
+
+/* === GRID === */
+
+.cards {
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    
+}
+
+#head {
+    font-family: Roboto-Bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 50px;
+    color: #111111;
+    margin-bottom: 20px;
+    
+}
+
+.card img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+}
+
+.card .card-content p {
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    line-height: 21px;
+    color: #111111;
+    margin-top: 20px;
+    
+}
+
+.card .card-info {
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
+    margin-top: 5px;
+}
+
+footer {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 75px;
+    
+        
+}
+
+
+/* === SOBRE === */
+
+h1 {
+    font-family: Roboto-Bold;
+    font-size: 24px;
+    color: #111111;
+    line-height: 28px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#sobre {
+    font-size: 18px;
+    line-height: 28x;
+    color: #444444;
+}
+
+h2 {
+    font-family: Roboto-Bold;
+    font-size: 20px;
+    color: #111111;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+/* === MODAL ==== */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    width: 100%;
+    height: 100%;
+    
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    text-align: center;
+    width: 660PX;
+    height: 440PX;
+    background: #FFFFFF;
+    position: relative;
+    border-radius: 15px;
+}
+
+.modal-content img {
+    width: 600px;
+    height: 200px;
+    border-radius: 40px;
+    margin: 30px 30px 20px 30px ;
+}
+
+.modal .close-modal #close {
+    color: #999999;
+    cursor: pointer;
+    position: absolute;
+    left: 281px;
+    bottom: 30px;
+
+}
+
+/* === MODAL ACTIVE ==== */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-card-content {
+    font-family: Roboto-Regular;
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #111111;
+    text-align: center;
+}
+
+.modal-card-info {
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    color: #777777;
+    text-align: center;
 }
