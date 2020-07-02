@@ -197,7 +197,7 @@ h2 {
     align-items: center;
 }
 
-.modal {
+.cards2 {
     text-align: center;
     width: 660PX;
     height: 440PX;
@@ -237,7 +237,7 @@ h2 {
     text-align: center;
 }
 
-.modal .close-modal #close {
+.card2 .close-modal #close {
     color: #999999;
     cursor: pointer;
     position: absolute;
