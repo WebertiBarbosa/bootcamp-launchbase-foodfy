@@ -124,7 +124,7 @@ a {
     border-radius: 15px;
 }
 
-.card .card-content p {
+.card .card-content h4 {
     font-family: Roboto-Regular;
     font-size: 18px;
     line-height: 21px;
@@ -133,7 +133,7 @@ a {
     
 }
 
-.card .card-info {
+.card .card-info h3 {
     font-family: Roboto-Regular;
     font-size: 14px;
     line-height: 16px;
@@ -222,7 +222,7 @@ h2 {
     visibility: visible;
 }
 
-.modal-card-content {
+.modal-card-content h4 {
     font-family: Roboto-Regular;
     font-size: 24px;
     margin-bottom: 5px;
@@ -230,7 +230,7 @@ h2 {
     text-align: center;
 }
 
-.modal-card-info {
+.modal-card-info h3 {
     font-family: Roboto-Regular;
     font-size: 18px;
     color: #777777;
