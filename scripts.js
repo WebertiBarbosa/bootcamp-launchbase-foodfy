@@ -13,11 +13,11 @@ for (let card of cards2) {
         modalOverlay.querySelector('img').src = `images/${imagemId}`
         modalOverlay.querySelector('h4').innerHTML = `${receita}`
         modalOverlay.querySelector('h3').innerHTML = `${autor}`
-       
     })
 }
-
+       
 document.querySelector('.close-modal').addEventListener('click', function(){
     modalOverlay.classList.remove('active')
 })
+
 
