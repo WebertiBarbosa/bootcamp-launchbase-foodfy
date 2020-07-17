@@ -12,18 +12,21 @@
         <p id="head"><strong>Mais acessadas</strong></p>
 
         <section class="cards">
+            {% for item in items %}
             <div class="card">
                 <div class="card-image-container">
-                    <img src="images/burger.png" alt="burger">
+                    <img src="{{item.image}}" alt="Imagem de {{item.title}}">
                 </div>
                 <div class="card-content">
-                    <h4>Triplo bacon burger</h4>
+                    <h4>{{item.title}}</h4>
                 </div>
                 <div class="card-info">
-                    <h3>por Jorge Relato</h3>
+                    <h3>{{item.author}}</h3>
                 </div>
             </div>
-            <div class="card">
+            {% endfor %}
+
+            {# <div class="card">
                 <div class="card-image-container">
                     <img src="images/pizza.png" alt="pizza">
                 </div>
@@ -77,7 +80,7 @@
                 <div class="card-info">
                     <h3>por Vania Steroski</h3>
                 </div>
-            </div>
+            </div> #}
 
         </section>
         {% endblock %}
