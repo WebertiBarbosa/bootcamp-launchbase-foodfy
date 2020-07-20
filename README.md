@@ -1,5 +1,5 @@
 <h1 align= 'center'> 
-    <img src= 'https://ik.imagekit.io/wriz9vsytc/foodfy_refatorado_DJ8TbfPXw.gif' 
+    <img src= 'https://ik.imagekit.io/wriz9vsytc/foodfy_refatorado_DJ8TbfPXw.gif'> 
    
 </h1>
 
