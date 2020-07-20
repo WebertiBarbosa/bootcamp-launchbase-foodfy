@@ -14,12 +14,11 @@
 
             <div class="card" id="{{ item.id }}">
                 <div class="card-image">
-                    <img src="{{ item.image }}" alt="{{ item.title }}">
+                    <img src="{{ item.image }}" alt="Imagem de {{ item.title }}">
                 </div>
                 <div class="card-info">
                     <h2>{{ item.title }}</h2>
-                    <h3>por
-                        {{ item.author }}</h3>
+                    <h3>por {{ item.author }}</h3>
                 </div>
             </div>
 
