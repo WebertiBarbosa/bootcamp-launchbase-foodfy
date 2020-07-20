@@ -1,17 +1,18 @@
 const express = require("express")
 const nunjucks = require("nunjucks")
-
-const server = express()
 const recipes = require("./database/data")
 
+const server = express()
 
 server.use(express.static("public"))
+
 
 server.set("view engine", "njk")
 
 nunjucks.configure("src/views", {
     express: server,
-    noCache: true
+    noCache: true,
+    autoescape: false
 })
 
 server.get("/", (req, res) => {
@@ -26,13 +27,17 @@ server.get("/recipes", (req, res) => {
     return res.render("recipes", {items: recipes})
 })
 
-server.get("/recipes/:index", function (req, res) {
-    const recipeIndex = req.params.index;
-    if(!recipes[recipeIndex]) {
+server.get("/recipes/:id", function (req, res) {
+    const recipeId = req.params.id;
+    const recipe = recipes.find(function(recipe){
+        return recipe.id = recipeId
+    })
+
+    if(!recipes[recipeId]) {
         return res.render("not-found")
     }
     
-    return res.render("recipe", {item: recipes[recipeIndex]})
+    return res.render("recipe", {item: recipes[recipeId]})
   })
 
 server.use(function(req, res) {
