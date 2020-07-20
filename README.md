@@ -1,7 +1,7 @@
-<h1 align= 'center'> 
-    <img src= 'https://ik.imagekit.io/wriz9vsytc/foodfy_refatorado_DJ8TbfPXw.gif'> 
-   
-</h1>
+<h1>
+    <img src= 'public/foodfy.gif'> 
+</h1>   
+
 
 
 # Índice
